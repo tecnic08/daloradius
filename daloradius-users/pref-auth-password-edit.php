@@ -55,6 +55,18 @@
 					$logDebugSQL .= $sqlTestPassword . "\n";
 
 				}
+
+				elseif ( !empty($configValues['CONFIG_DB_PASSWORD_ENCRYPTION']) && $configValues['CONFIG_DB_PASSWORD_ENCRYPTION'] === 'md5') {
+
+					$sqlTestPassword = "SELECT MD5('".$dbSocket->escapeSimple($currentPassword)."') as Password";
+					$res = $dbSocket->query($sqlTestPassword);
+					$row = $res->fetchRow();
+
+					$passwordMD5Eval = $row[0];
+
+					$logDebugSQL .= $sqlTestPassword . "\n";
+
+				}
 				
 				$sql = "SELECT value, id FROM ".$configValues['CONFIG_DB_TBL_RADCHECK'].
 					" WHERE username='".$dbSocket->escapeSimple($login)."' AND".
@@ -92,6 +104,18 @@
 
 					include 'library/closedb.php';
 
+				} elseif ( ($res->numRows() == 1) && ($passwordMD5Eval == $row[0]) ) {
+	
+					$sql = "UPDATE ".$configValues['CONFIG_DB_TBL_RADCHECK'].
+						" SET value=MD5('".$dbSocket->escapeSimple($newPassword)."')".
+						" WHERE id='$passwordRowId'";
+					$res = $dbSocket->query($sql);
+					$logDebugSQL .= $sql . "\n";
+
+					$successMsg = "Updated password for user: <b>$login</b>";
+					$logAction .= "Successfully update authentication password for user [$login] on page: ";
+
+					include 'library/closedb.php';
 
 				} else {
 
