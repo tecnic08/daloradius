@@ -22,8 +22,8 @@
 
 $l['all']['daloRADIUS'] = "daloRADIUS " . $configValues['DALORADIUS_VERSION'];
 $l['all']['daloRADIUSVersion'] = "version " . $configValues['DALORADIUS_VERSION'];
-$l['all']['copyright1'] = "Radius Reporting, Billing and Management by <a href=\"https://github.com/lirantal/daloradius\">Liran Tal</a>";
-$l['all']['copyright2'] = "daloRADIUS Copyright &copy; 2007-2019 by <a href=\"https://github.com/lirantal/daloradius\">Liran Tal</a> <br/>
+$l['all']['copyright1'] = "HG Robotics Network Service";
+$l['all']['copyright2'] = "Based on daloRADIUS Copyright &copy; 2007-2019 by <a href=\"https://github.com/lirantal/daloradius\">Liran Tal</a> <br/>
 Template design by <a href=\"http://www.sixshootermedia.com\">Six Shooter Media</a>.";
 $l['all']['ID'] = "ID";
 
@@ -353,7 +353,7 @@ $l['button']['GenerateReport'] = "Generate Report";
 
 
 $l['button']['ChangePortalPassword'] = "Change Portal Password";
-$l['button']['ChangeAuthPassword'] = "Change Auth Password";
+$l['button']['ChangeAuthPassword'] = "Change Password";
 $l['button']['EditUserInfo'] = "Edit Contact Information";
 
 $l['button']['Preferences'] = "Preferences";
@@ -539,7 +539,7 @@ $l['title']['Optional'] = "Optional";
  ************************************************************************************/
 
 $l['text']['LoginRequired'] = "Login Required";
-$l['text']['LoginPlease'] = "Login Please";
+$l['text']['LoginPlease'] = "Please Authenticate";
 
 /* ********************************************************************************** */
 
@@ -745,12 +745,9 @@ $l['helpPage']['billinvoicelist'] = '';
 $l['helpPage']['login'] = "";
 $l['helpPage']['loginUsersPortal'] = "
 <br/><br/>
-Dear User,<br/>
 Welcome to the Users Portal.<br/><br/>
 By logging-in with your account username and password you will be able to edit your contact settings
-as well as track your surfing habbits and view visual graphs.<br/><br/>
-Regards,<br/>
-daloRADIUS Staff.<br/><br/>";
+as well as track your surfing habbits and view visual graphs.<br/><br/><br/><br/>";
 
 $l['helpPage']['mngradproxys'] = "";
 $l['helpPage']['mngradproxyslist'] = "";
