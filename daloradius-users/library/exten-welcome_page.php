@@ -25,8 +25,8 @@
 echo "
 	<center>
 
-		<h2> daloRADIUS Userportal </h2>
-		<h3> Welcome to the user Portal </h3>
+		<h2> HG Robotics Network Service User Portal </h2>
+		<h3> Here are your usage summary </h3>
 		<br/><br/><br/>
 				
 	</center>

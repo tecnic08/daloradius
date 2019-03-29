@@ -59,12 +59,11 @@
 
 	</ul>
 	
-	<h3>Support</h3>
+	<h3>About</h3>
 
 	<p class="news">
-		daloRADIUS <br/>
-		RADIUS Management 
-		<a href="https://github.com/lirantal/daloradius" class="more">Read More &raquo;</a>
+		HG Robotics <br/>
+		RADIUS Management <br />
 	</p>
 
 
