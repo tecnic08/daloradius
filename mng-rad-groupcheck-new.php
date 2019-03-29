@@ -126,7 +126,7 @@
 <script src="library/js_date/date-functions.js" type="text/javascript"></script>
 <script src="library/js_date/datechooser.js" type="text/javascript"></script>
 
-<title>daloRADIUS</title>
+<title>HG Robotics Network Service</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
 <link rel="stylesheet" type="text/css" href="library/js_date/datechooser.css">

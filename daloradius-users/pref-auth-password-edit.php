@@ -67,7 +67,6 @@
 					$logDebugSQL .= $sqlTestPassword . "\n";
 
 				}
-				
 				$sql = "SELECT value, id FROM ".$configValues['CONFIG_DB_TBL_RADCHECK'].
 					" WHERE username='".$dbSocket->escapeSimple($login)."' AND".
 					" attribute LIKE '%-Password'";
@@ -104,8 +103,9 @@
 
 					include 'library/closedb.php';
 
-				} elseif ( ($res->numRows() == 1) && ($passwordMD5Eval == $row[0]) ) {
-	
+
+				} elseif  ( ($res->numRows() == 1) && ($passwordMD5Eval == $row[0]) ) { 
+					
 					$sql = "UPDATE ".$configValues['CONFIG_DB_TBL_RADCHECK'].
 						" SET value=MD5('".$dbSocket->escapeSimple($newPassword)."')".
 						" WHERE id='$passwordRowId'";
@@ -116,8 +116,8 @@
 					$logAction .= "Successfully update authentication password for user [$login] on page: ";
 
 					include 'library/closedb.php';
-
-				} else {
+				}
+				else {
 
 					$failureMsg = "Failed updating authentication password, possibly wrong password entered for user: <b>$login</b>";
 					$logAction .= "Failed updating authentication password, possibly wrong password entered for user [$login] on page: ";
@@ -148,7 +148,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>daloRADIUS</title>
+<title>HG Robotics Network Service</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
 </head>

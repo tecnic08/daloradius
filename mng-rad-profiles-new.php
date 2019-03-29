@@ -68,7 +68,7 @@
 					$table = $configValues['CONFIG_DB_TBL_RADGROUPREPLY'];
 
 
-				if (!($value) || $table == '')
+				if (!($value))
 					continue;
 
 				$sql = "INSERT INTO $table (id,GroupName,Attribute,op,Value) ".
@@ -113,7 +113,7 @@
 <script type="text/javascript" src="library/javascript/ajax.js"></script>
 <script type="text/javascript" src="library/javascript/dynamic_attributes.js"></script>
 
-<title>daloRADIUS</title>
+<title>HG Robotics Network Service</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
 </head>

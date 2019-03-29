@@ -157,7 +157,7 @@ function sendEmailNotification($subject, $message) {
 function getHTMLMessage($table) {
 
 	$result = "";
-	$result .= "<html><head><title>daloRADIUS Traffic Monitoring";
+	$result .= "<html><head><title>HG Robotics Network Service Traffic Monitoring";
 	$result .= "</title></head>";
 	$result .= "<body><table>";
 	
