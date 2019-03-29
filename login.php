@@ -24,7 +24,7 @@
 <div id="innerwrapper">
 
 		<div id="header">
-                <h1><a href="index.php"> <img src="images/daloradius_small.png" border=0/></a></h1>
+                <h1><a href="index.php"> <img src="images/hgr_logo.png" width="70" border=0/></a></h1>
 				
 				<h2>
 				
@@ -34,7 +34,7 @@
 				
 				<ul id="subnav">
 				
-				<li><?php echo t('all','daloRADIUS') ?></li>
+				<!--<li><?php echo t('all','daloRADIUS') ?></li>-->
 				
 				</ul>
 		
@@ -49,7 +49,7 @@
 				<form name="login" action="dologin.php" class="sidebar" method="post" >
 					<ul class="subnav">
 						<li><a href="#" >Username</a> </li>
-						<input name="operator_user" value="administrator" type="text" tabindex=1 />
+						<input name="operator_user" value="" type="text" tabindex=1 />
 						<li><a href="#" >Password</a> </li>
 						<input name="operator_pass" value="" type="password" tabindex=2 />
 						<br/>

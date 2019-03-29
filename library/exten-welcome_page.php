@@ -25,11 +25,10 @@
 echo "
 	<center>
 
-		<h2> daloRADIUS Web Management Server </h2>
-		<h3> ".t('all','daloRADIUSVersion')." </h3>
-		<h4> <a href=\"mailto:liran.tal@gmail.com\"> Liran Tal </a> </h4>
+		<h2> HG Robotics Network Service </h2>
+		<h3> Administrator Portal </h3>
 		<br/><br/><br/>
-		<img src='images/daloradius_logo.jpg' border=0 />
+		<img src='images/hgr_logo_large.png' width=350 border=0 />
 	</center>
 ";
 

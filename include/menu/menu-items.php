@@ -22,7 +22,7 @@
 									&nbsp;
 								</span>
 
-                                <h1><a href="index.php"> <img src="images/daloradius_small.png" border=0/></a></h1>
+                                <h1><a href="index.php"> <img src="images/hgr_logo.png" border=0/></a></h1>
 
                                 <h2>
 									<?php echo t('all','copyright1'); ?>

@@ -24,8 +24,8 @@
  
 $l['all']['daloRADIUS'] = "daloRADIUS " . $configValues['DALORADIUS_VERSION'];
 $l['all']['daloRADIUSVersion'] = "version " . $configValues['DALORADIUS_VERSION'];
-$l['all']['copyright1'] = "RADIUS Management, Reporting, Accounting and Billing by <a href=\"https://github.com/lirantal/daloradius\">Liran Tal</a>";
-$l['all']['copyright2'] = "daloRADIUS Copyright &copy; 2007-2019 by <a href=\"https://github.com/lirantal/daloradius\">Liran Tal</a> <br/>
+$l['all']['copyright1'] = "HG Robotics Network Service";
+$l['all']['copyright2'] = "Based on daloRADIUS Copyright &copy; 2007-2019 by <a href=\"https://github.com/lirantal/daloradius\">Liran Tal</a> <br/>
 Template design by <a href=\"http://www.sixshootermedia.com\">Six Shooter Media</a>.";
 $l['all']['ID'] = "ID";
 $l['all']['PoolName'] = "Pool Name";
@@ -945,8 +945,8 @@ $l['graphs']['Dec'] = "December";
  * General text information that is used through-out the pages
  ************************************************************************************/
 
-$l['text']['LoginRequired'] = "Login Required";
-$l['text']['LoginPlease'] = "Login Please";
+$l['text']['LoginRequired'] = "Administator Login";
+$l['text']['LoginPlease'] = "Please Authenticate";
 
 /* ********************************************************************************** */
 
@@ -1212,7 +1212,7 @@ $l['Intro']['configoperatorsedit.php'] = "Edit Operator Settings";
 $l['Intro']['configoperatorsnew.php'] = "New Operator";
 $l['Intro']['configoperatorslist.php'] = "Operators Listing";
 
-$l['Intro']['login.php'] = "Login";
+$l['Intro']['login.php'] = "Welcome to Administator Portal";
 
 $l['captions']['providebillratetodel'] = "Provide the rate entry type which you would like to remove";
 $l['captions']['detailsofnewrate'] = "You may fill below details for the new rate";
