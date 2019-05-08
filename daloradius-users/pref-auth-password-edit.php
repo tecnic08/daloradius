@@ -40,8 +40,12 @@
 
 			if (trim($currentPassword) != "") {
 
+			$uppercase = preg_match('@[A-Z]@', $newPassword);
+			$lowercase = preg_match('@[a-z]@', $newPassword);
+			$number    = preg_match('@[0-9]@', $newPassword);
+
+			if($uppercase && $lowercase && $number && strlen($password) < 8) {
 				include 'library/opendb.php';
-				
 				global $configValues;
 
 				if ( !empty($configValues['CONFIG_DB_PASSWORD_ENCRYPTION']) && $configValues['CONFIG_DB_PASSWORD_ENCRYPTION'] === 'crypt') {
@@ -123,7 +127,11 @@
 					$logAction .= "Failed updating authentication password, possibly wrong password entered for user [$login] on page: ";
 
 				}
-				
+
+			} else {
+				$failureMsg = "Password must be atleast 8 characters and include lowercase, uppercase and number. Refresh and try again.";
+				$logAction .= "Password does not meet security criteria";
+			} // Strong password check
 			} else {
 				$failureMsg = "New Password field was left empty, please provide a new password to change to";
 				$logAction .= "Failed changing user authentication password, empty current password for user [$login] on page: ";
